@@ -1,0 +1,59 @@
+{
+  "name": "asdf",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "cesium": "^1.83.0",
+    "cesium-draw": "^3.4.5",
+    "core-js": "^3.8.3",
+    "element-ui": "^2.13.2",
+    "jquery": "^3.5.1",
+    "js-base64": "^3.7.2",
+    "leaflet": "^1.7.1",
+    "leaflet.pm": "^2.2.0",
+    "ol": "^7.1.0",
+    "proj4": "^2.7.0",
+    "querystringify": "^2.2.0",
+    "sass-loader": "^13.1.0",
+    "tiff.js": "^1.0.0",
+    "vue": "^2.6.14",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "vue-template-compiler": "^2.6.14",
+    "leaflet": "^1.7.1",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "vue-wechat-title": "^2.0.7"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
