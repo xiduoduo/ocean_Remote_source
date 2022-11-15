@@ -61,7 +61,7 @@
 
 <script>
 export default {
-  name: 'NavMenu',
+  name: 'RightNav',
   data() {
     return {
       uni: true,

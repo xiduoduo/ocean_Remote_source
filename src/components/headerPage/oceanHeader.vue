@@ -133,13 +133,13 @@ export default {
     },
     // 判断当前路由
     judgeRoute() {
-      if (this.$route.path == '/integratePage') {
+      if (this.$route.path == '/tables') {
         this.isShowTime = true
       }
     },
     toIntegrate() {
       console.log(123)
-      this.$router.push({ path: '/integratePage' })
+      this.$router.push({ path: '/tables' })
     }
   },
 }

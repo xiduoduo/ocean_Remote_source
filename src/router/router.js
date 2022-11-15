@@ -61,7 +61,7 @@ export const routes = [
   hidden: true
 },
 {
-  path: "/integratePage",
+  path: "/tables",
   name: "IntegratePage",
   title: "原始资料",
   hidden: false,
@@ -98,6 +98,57 @@ export const routes = [
       import("@/components/ocean/index.vue")
       // import("@/components/homePage/index.vue")
   },
+
+  //tables
+  {
+    name: "Tool",
+    path: "/tables",
+    hidden: false,
+    isTable: true,
+    redirect: "/build",
+    alwaysShow: true,
+    meta: {
+        title: "系统工具",
+        icon: "tool",
+        noCache: false
+    },
+    // component: () =>
+    // import("@/components/ocean/index.vue")
+    // import("@/components/homePage/index.vue"),
+    children: [
+        {
+            name: "createTask",
+            path: "/build",
+            hidden: false,
+            component: (resolve) => require(['@/components/tables/createTask.vue'], resolve),
+            meta: {
+                title: "表单构建",
+                icon: "build",
+                noCache: false,
+            }
+        },
+        {
+            name: "Gen",
+            path: "/index",
+            hidden: false,
+            meta: {
+                title: "代码生成",
+                icon: "code",
+                noCache: false
+            }
+        },
+        {
+            name: "Swagger",
+            path: "/mulTask",
+            hidden: false,
+            meta: {
+                title: "系统接口",
+                icon: "swagger",
+                noCache: false
+            }
+        }
+    ]
+  }
 ]
 // export const inteRoutes = [
 //   {
